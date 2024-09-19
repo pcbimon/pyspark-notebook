@@ -41,7 +41,7 @@ ENV SPARK_OPTS="--driver-java-options=-Xms1024M --driver-java-options=-Xmx4096M 
 COPY setup_spark.py /opt/setup-scripts/
 
 # Setup Spark
-RUN /opt/setup-scripts/setup_spark.py \
+RUN python /opt/setup-scripts/setup_spark.py \
     --spark-version="${spark_version}" \
     --hadoop-version="${hadoop_version}" \
     --scala-version="${scala_version}" \
