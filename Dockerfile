@@ -11,8 +11,8 @@ RUN apt-get update && apt-get install -y \
 # Install pip and upgrade it
 RUN python3 -m pip install --upgrade pip
 
-# Install JupyterLab and PySpark 3.5.2
-RUN pip install jupyterlab pyspark==3.5.2
+# Install JupyterLab and PySpark 3.4.1
+RUN pip install jupyterlab pyspark==3.4.1
 
 # Create a new user and group
 RUN useradd -m -s /bin/bash jupyteruser
